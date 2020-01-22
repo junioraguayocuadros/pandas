@@ -20,5 +20,15 @@ print('DataFrames:')
 print(frame_test)
 print('- - - - - - - - - - - - ')
 
+frame_test2 = pd.DataFrame([[74, 38, 39],
+                           [34, 32, 32],
+                           [23, 39, 23]])
+print(frame_test2)
+print('- - - - - - - - - - - - ')
 
+frame_test3 = pd.DataFrame([[74, 38, 39],
+                           [34, 32, 32],
+                           [23, 39, 23]], columns=[1999, 2000, 2001])
+print(frame_test3)
+print('- - - - - - - - - - - - ')
 

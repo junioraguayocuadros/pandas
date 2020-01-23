@@ -32,3 +32,8 @@ frame_test3 = pd.DataFrame([[74, 38, 39],
 print(frame_test3)
 print('- - - - - - - - - - - - ')
 
+# Read Data
+el_universal = pd.read_csv('eluniversal_2020_01_22_articles.csv')
+print(el_universal)
+
+

@@ -56,3 +56,6 @@ print('- - - - - - - - - - - - ')
 print(el_universal.iloc[:5, 0])
 print('- - - - - - - - - - - - ')
 
+print(el_universal.loc[:, 'body':'title'])
+print('- - - - - - - - - - - - ')
+

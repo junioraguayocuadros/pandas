@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy
 
 # Series
 print('Series:')
@@ -34,7 +35,7 @@ print('- - - - - - - - - - - - ')
 
 # Read Data
 pd.options.display.max_rows = 10
-el_universal = pd.read_csv('eluniversal_2020_01_22_articles.csv')
+el_universal = pd.read_csv('eluniversal_2020_01_23_articles.csv')
 print(el_universal.head())
 print(el_universal.tail())
 print('- - - - - - - - - - - - ')
@@ -46,6 +47,12 @@ print(el_universal[['title', 'body']])
 
 print('- - - - - - - - - - - - ')
 
+# Numpy like
 
-
+print(el_universal.iloc[1:10])
+print('- - - - - - - - - - - - ')
+print(el_universal.iloc[12]['title'])
+print('- - - - - - - - - - - - ')
+print(el_universal.iloc[:5, 0])
+print('- - - - - - - - - - - - ')
 

@@ -65,5 +65,9 @@ print('- - - - - - - - - - - - ')
 el_universal['newspaper_uid'] = 'eluniversal'
 print(el_universal)
 
+# 2 Obtener el host
+el_universal['host'] = el_universal['url'].apply(lambda url: urlparse(url).netloc)
+print(el_universal)
 
+print(el_universal['host'].value_counts())
 

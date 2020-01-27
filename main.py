@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy
+from urllib.parse import urlparse
 
 # Series
 print('Series:')
@@ -35,7 +36,7 @@ print('- - - - - - - - - - - - ')
 
 # Read Data
 pd.options.display.max_rows = 10
-el_universal = pd.read_csv('eluniversal_2020_01_23_articles.csv')
+el_universal = pd.read_csv('eluniversal_2020_01_27_articles.csv')
 print(el_universal.head())
 print(el_universal.tail())
 print('- - - - - - - - - - - - ')
@@ -58,4 +59,11 @@ print('- - - - - - - - - - - - ')
 
 print(el_universal.loc[:, 'body':'title'])
 print('- - - - - - - - - - - - ')
+
+# Data Wrangling
+# 1 Añadir newspaper_uid al DataFrame
+el_universal['newspaper_uid'] = 'eluniversal'
+print(el_universal)
+
+
 
